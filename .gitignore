@@ -1,11 +1,11 @@
-# للـ Frontend (React/Vite)
+#  Frontend (React/Vite)
 smart-signal-ai/node_modules/
 smart-signal-ai/dist/
 smart-signal-ai/build/
 smart-signal-ai/.env
 smart-signal-ai/*.log
 
-# للـ Backend (Python)
+#  Backend (Python)
 smart_signal_backend/__pycache__/
 smart_signal_backend/*.pyc
 smart_signal_backend/*.pyo
@@ -13,7 +13,7 @@ smart_signal_backend/venv/
 smart_signal_backend/.env
 smart_signal_backend/*.log
 
-# ملفات عامة
+# 
 *.swp
 .DS_Store
 .vscode/
