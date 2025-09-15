@@ -4,6 +4,7 @@ smart-signal-ai/dist/
 smart-signal-ai/build/
 smart-signal-ai/.env
 smart-signal-ai/*.log
+# Test comment for push
 
 #  Backend (Python)
 smart_signal_backend/__pycache__/
