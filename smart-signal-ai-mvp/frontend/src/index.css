@@ -30,6 +30,20 @@ body {
   -moz-osx-font-smoothing: grayscale;
   direction: rtl;
   transition: background-color var(--transition-duration) var(--transition-timing);
+  /* تحسين الثيم الفاتح */
+  background-color: #ffffff;
+  color: #111827;
+}
+
+/* Light theme improvements */
+.light {
+  background-color: #ffffff !important;
+  color: #111827 !important;
+}
+
+.dark {
+  background-color: #111827 !important;
+  color: #ffffff !important;
 }
 
 code {

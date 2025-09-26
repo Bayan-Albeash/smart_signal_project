@@ -11,13 +11,13 @@ export const useTheme = () => {
 }
 
 export const ThemeProvider = ({ children }) => {
-  const [isDark, setIsDark] = useState(false) // Start with false, will be set in useEffect
+  const [isDark, setIsDark] = useState(false) // Always start with light theme
 
   // Initialize theme on mount and apply to document
   useEffect(() => {
     const saved = localStorage.getItem('theme')
-    const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches
-    const shouldBeDark = saved ? saved === 'dark' : prefersDark
+    // Default to light theme - only use dark if explicitly saved
+    const shouldBeDark = saved === 'dark' ? true : false
     
     setIsDark(shouldBeDark)
     
@@ -25,9 +25,12 @@ export const ThemeProvider = ({ children }) => {
     if (shouldBeDark) {
       document.documentElement.classList.add('dark')
       document.documentElement.setAttribute('data-theme', 'dark')
+      document.body.classList.add('dark')
     } else {
       document.documentElement.classList.remove('dark')
       document.documentElement.setAttribute('data-theme', 'light')
+      document.body.classList.add('light')
+      document.body.classList.remove('dark')
     }
   }, [])
 
@@ -40,9 +43,13 @@ export const ThemeProvider = ({ children }) => {
     if (isDark) {
       document.documentElement.classList.add('dark')
       document.documentElement.setAttribute('data-theme', 'dark')
+      document.body.classList.add('dark')
+      document.body.classList.remove('light')
     } else {
       document.documentElement.classList.remove('dark')
       document.documentElement.setAttribute('data-theme', 'light')
+      document.body.classList.add('light')
+      document.body.classList.remove('dark')
     }
     
     // Force re-render of all components by updating a global state
@@ -53,7 +60,11 @@ export const ThemeProvider = ({ children }) => {
 
   const toggleTheme = () => {
     console.log('Toggle theme clicked! Current isDark:', isDark)
-    setIsDark(prev => !prev)
+    setIsDark(prev => {
+      const newTheme = !prev
+      console.log('New theme will be:', newTheme ? 'dark' : 'light')
+      return newTheme
+    })
   }
 
   const value = {

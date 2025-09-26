@@ -2,7 +2,6 @@ import React, { useState, useEffect } from 'react'
 import { motion } from 'framer-motion'
 import GoogleMap from '../components/GoogleMap'
 import ScenarioReplay from '../components/ScenarioReplay'
-import GeminiChat from '../components/GeminiChat'
 import useWebSocket from '../hooks/useWebSocket'
 import AnimatedCounter from '../components/AnimatedCounter'
 import AnimatedProgressBar from '../components/AnimatedProgressBar'
@@ -167,6 +166,10 @@ const MapPage = () => {
     setIsReplaying(playing)
   }
 
+  const toggleChatbot = () => {
+    setIsChatbotOpen(!isChatbotOpen)
+  }
+
   const getStatusColor = (status) => {
     switch (status) {
       case 'normal': return 'bg-green-500'
@@ -177,23 +180,23 @@ const MapPage = () => {
   }
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-blue-50 to-indigo-100 dark:from-gray-900 dark:to-gray-800 pt-16 sm:pt-20">
+    <div className="min-h-screen bg-white dark:from-gray-900 dark:to-gray-800 pt-16 sm:pt-20">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 sm:py-8">
         <div className="mb-6 sm:mb-8 flex flex-col sm:flex-row justify-between items-start sm:items-center space-y-4 sm:space-y-0">
           <div>
             <h1 className="text-2xl sm:text-3xl font-bold text-gray-900 dark:text-white mb-2">الخريطة والمحاكاة</h1>
-            <p className="text-sm sm:text-base text-gray-600 dark:text-gray-300">مراقبة الأبراج ومحاكاة إعادة التوزيع الذكي</p>
+            <p className="text-sm sm:text-base text-gray-700 dark:text-gray-300 font-medium">مراقبة الأبراج ومحاكاة إعادة التوزيع الذكي</p>
           </div>
           <div className="flex items-center space-x-2 space-x-reverse">
             {isConnected ? (
               <>
                 <div className="w-3 h-3 bg-green-500 rounded-full animate-pulse"></div>
-                <span className="text-sm text-gray-600 dark:text-gray-300">متصل</span>
+                <span className="text-sm text-gray-700 dark:text-gray-300 font-medium">متصل</span>
               </>
             ) : (
               <>
                 <WifiOff className="w-4 h-4 text-red-500" />
-                <span className="text-sm text-red-500">غير متصل</span>
+                <span className="text-sm text-red-500 font-medium">غير متصل</span>
               </>
             )}
           </div>
@@ -425,9 +428,6 @@ const MapPage = () => {
             </div>
           </motion.div>
         )}
-
-        {/* Gemini Chat */}
-        <GeminiChat />
       </div>
     </div>
   )

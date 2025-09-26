@@ -39,13 +39,13 @@ const Navbar = () => {
   }
 
   return (
-    <nav className="fixed top-0 left-0 right-0 bg-white dark:bg-gray-900 shadow-lg z-50 transition-colors" dir="rtl">
+    <nav className="fixed top-0 left-0 right-0 bg-white dark:bg-gray-900 shadow-xl border-b border-gray-100 dark:border-gray-800 z-50 transition-colors" dir="rtl">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
           {/* Logo */}
           <div className="flex items-center">
             <Link to="/" className="flex items-center space-x-3 space-x-reverse">
-              <div className="w-10 h-10 bg-gradient-to-r from-blue-500 to-indigo-600 rounded-lg flex items-center justify-center">
+              <div className="w-10 h-10 bg-gradient-to-r from-blue-500 to-indigo-600 rounded-lg flex items-center justify-center shadow-md">
                 <span className="text-white font-bold text-lg">S</span>
               </div>
               <div className="hidden sm:block">
@@ -80,7 +80,7 @@ const Navbar = () => {
           <div className="hidden lg:flex items-center space-x-4 space-x-reverse">
             <motion.button
               onClick={handleThemeToggle}
-              className={`p-2 rounded-lg bg-gray-100 dark:bg-gray-800 hover:bg-gray-200 dark:hover:bg-gray-700 transition-colors ${
+              className={`p-3 rounded-xl bg-gray-50 dark:bg-gray-800 hover:bg-gray-100 dark:hover:bg-gray-700 border border-gray-200 dark:border-gray-600 transition-all shadow-sm ${
                 isThemeChanging ? 'no-transition' : ''
               }`}
               title={isDark ? 'التبديل للوضع الفاتح' : 'التبديل للوضع الداكن'}
@@ -92,6 +92,7 @@ const Navbar = () => {
                 initial={{ rotate: 0, scale: 0.8 }}
                 animate={{ rotate: 360, scale: 1 }}
                 transition={{ duration: 0.3 }}
+                className={isDark ? 'text-yellow-500' : 'text-blue-600'}
               >
                 {isDark ? <Sun className="w-5 h-5" /> : <Moon className="w-5 h-5" />}
               </motion.div>
@@ -107,7 +108,7 @@ const Navbar = () => {
           <div className="lg:hidden flex items-center space-x-2 space-x-reverse">
             <motion.button
               onClick={handleThemeToggle}
-              className={`p-2 rounded-lg bg-gray-100 dark:bg-gray-800 hover:bg-gray-200 dark:hover:bg-gray-700 transition-colors ${
+              className={`p-3 rounded-xl bg-gray-50 dark:bg-gray-800 hover:bg-gray-100 dark:hover:bg-gray-700 border border-gray-200 dark:border-gray-600 transition-all shadow-sm ${
                 isThemeChanging ? 'no-transition' : ''
               }`}
               title={isDark ? 'التبديل للوضع الفاتح' : 'التبديل للوضع الداكن'}
@@ -119,6 +120,7 @@ const Navbar = () => {
                 initial={{ rotate: 0, scale: 0.8 }}
                 animate={{ rotate: 360, scale: 1 }}
                 transition={{ duration: 0.3 }}
+                className={isDark ? 'text-yellow-500' : 'text-blue-600'}
               >
                 {isDark ? <Sun className="w-5 h-5" /> : <Moon className="w-5 h-5" />}
               </motion.div>
@@ -126,7 +128,7 @@ const Navbar = () => {
             
             <button
               onClick={toggleMobileMenu}
-              className="p-2 rounded-lg bg-gray-100 dark:bg-gray-800 hover:bg-gray-200 dark:hover:bg-gray-700 transition-colors"
+              className="p-3 rounded-xl bg-gray-50 dark:bg-gray-800 hover:bg-gray-100 dark:hover:bg-gray-700 border border-gray-200 dark:border-gray-600 transition-all shadow-sm"
               title="القائمة"
             >
               {isMobileMenuOpen ? <X className="w-5 h-5" /> : <Menu className="w-5 h-5" />}

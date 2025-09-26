@@ -9,14 +9,14 @@ const HomePage = () => {
   const { data } = useDynamicData()
   
   return (
-    <div className="min-h-screen bg-gradient-to-br from-blue-50 to-indigo-100 dark:from-gray-900 dark:to-gray-800 pt-16 sm:pt-20">
+    <div className="min-h-screen bg-white dark:from-gray-900 dark:to-gray-800 pt-16 sm:pt-20">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6 sm:py-12">
         {/* Hero Section */}
         <div className="text-center mb-12 sm:mb-16">
           <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-900 dark:text-white mb-4 sm:mb-6">
             SmartSignal AI
           </h1>
-          <p className="text-lg sm:text-xl text-gray-600 dark:text-gray-300 mb-6 sm:mb-8 max-w-3xl mx-auto px-4">
+          <p className="text-lg sm:text-xl text-gray-800 dark:text-gray-300 mb-6 sm:mb-8 max-w-3xl mx-auto px-4 font-medium">
             نظام ذكي متطور لتوزيع إشارات الاتصال الخلوي باستخدام الذكاء الاصطناعي والتعلم الآلي
           </p>
           <Link
@@ -30,33 +30,33 @@ const HomePage = () => {
 
         {/* Features Grid */}
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8 mb-12 sm:mb-16">
-          <div className="bg-white dark:bg-gray-800 rounded-lg p-6 shadow-md">
+          <div className="bg-white dark:bg-gray-800 rounded-xl p-6 shadow-lg border border-gray-100 dark:border-gray-700">
             <div className="text-4xl mb-4">🤖</div>
             <h3 className="text-xl font-semibold mb-2 text-gray-900 dark:text-white">الذكاء الاصطناعي</h3>
-            <p className="text-gray-600 dark:text-gray-300">
+            <p className="text-gray-700 dark:text-gray-300 leading-relaxed">
               استخدام XGBoost و Gemini AI للتنبؤ الذكي وتحسين توزيع المستخدمين
             </p>
           </div>
 
-          <div className="bg-white dark:bg-gray-800 rounded-lg p-6 shadow-md">
+          <div className="bg-white dark:bg-gray-800 rounded-xl p-6 shadow-lg border border-gray-100 dark:border-gray-700">
             <div className="text-4xl mb-4">📊</div>
             <h3 className="text-xl font-semibold mb-2 text-gray-900 dark:text-white">المحاكاة التفاعلية</h3>
-            <p className="text-gray-600 dark:text-gray-300">
+            <p className="text-gray-700 dark:text-gray-300 leading-relaxed">
               محاكاة فورية مع خرائط Google Maps ومراقبة لحظية للأداء
             </p>
           </div>
 
-          <div className="bg-white dark:bg-gray-800 rounded-lg p-6 shadow-md">
+          <div className="bg-white dark:bg-gray-800 rounded-xl p-6 shadow-lg border border-gray-100 dark:border-gray-700">
             <div className="text-4xl mb-4">📈</div>
             <h3 className="text-xl font-semibold mb-2 text-gray-900 dark:text-white">التحليلات المتقدمة</h3>
-            <p className="text-gray-600 dark:text-gray-300">
+            <p className="text-gray-700 dark:text-gray-300 leading-relaxed">
               تقارير شاملة مع KPIs وخرائط حرارية ومقارنات الأداء
             </p>
           </div>
         </div>
 
         {/* Statistics */}
-        <div className="bg-white dark:bg-gray-800 rounded-lg p-4 sm:p-8 shadow-md">
+        <div className="bg-white dark:bg-gray-800 rounded-xl p-4 sm:p-8 shadow-lg border border-gray-100 dark:border-gray-700">
           <div className="flex items-center justify-center mb-6 sm:mb-8">
             <h2 className="text-xl sm:text-2xl font-bold text-gray-900 dark:text-white">إحصائيات النظام</h2>
             <motion.div

@@ -27,8 +27,6 @@ sys.path.append(os.path.dirname(__file__))
 # Import routes
 from routes.simulation import simulation_bp
 from routes.analytics import analytics_bp
-from routes.gemini import gemini_bp
-from routes.gemini_chat import gemini_chat_bp
 from routes.reports import reports_bp
 from routes.trc_data import trc_data_bp
 from routes.cloud_storage import storage_bp
@@ -37,8 +35,6 @@ from routes.performance import performance_bp
 # Register blueprints
 app.register_blueprint(simulation_bp, url_prefix='/api/simulation')
 app.register_blueprint(analytics_bp, url_prefix='/api/analytics')
-app.register_blueprint(gemini_bp, url_prefix='/api/gemini')
-app.register_blueprint(gemini_chat_bp, url_prefix='/api/gemini')
 app.register_blueprint(reports_bp, url_prefix='/api/reports')
 app.register_blueprint(trc_data_bp, url_prefix='/api/trc')
 app.register_blueprint(storage_bp, url_prefix='/api/storage')
