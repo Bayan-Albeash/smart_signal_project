@@ -1,0 +1,31 @@
+{
+  "name": "smart-signal-ai-organized",
+  "version": "1.0.0",
+  "description": "SmartSignal AI - نظام ذكي لإدارة الإشارات",
+  "author": "SmartSignal AI Team",
+  "license": "MIT",
+  "scripts": {
+    "start": "start.bat",
+    "backend": "cd backend && python app.py",
+    "frontend": "cd frontend && npm run dev",
+    "install-all": "cd backend && pip install -r requirements.txt && cd ../frontend && npm install",
+    "build": "cd frontend && npm run build",
+    "test": "python -m pytest tests/"
+  },
+  "keywords": [
+    "ai",
+    "machine-learning",
+    "signal-processing",
+    "react",
+    "flask",
+    "websocket"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Bayan-Albeash/smart_signal_project.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Bayan-Albeash/smart_signal_project/issues"
+  },
+  "homepage": "https://github.com/Bayan-Albeash/smart_signal_project#readme"
+}

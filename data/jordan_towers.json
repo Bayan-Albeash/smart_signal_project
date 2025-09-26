@@ -1,0 +1,82 @@
+[
+  {
+    "id": 1,
+    "name": "برج عمان - وسط البلد",
+    "city": "عمان",
+    "operator": "زين الأردن",
+    "position": [31.9565, 35.9239],
+    "capacity": 200,
+    "currentLoad": 180,
+    "status": "congested",
+    "coverage": 6000,
+    "users": [
+      { "type": "call", "count": 60 },
+      { "type": "data", "count": 90 },
+      { "type": "video", "count": 30 }
+    ]
+  },
+  {
+    "id": 2,
+    "name": "برج الزرقاء - الجديدة",
+    "city": "الزرقاء",
+    "operator": "أورانج الأردن",
+    "position": [32.0833, 36.0933],
+    "capacity": 150,
+    "currentLoad": 110,
+    "status": "normal",
+    "coverage": 5000,
+    "users": [
+      { "type": "call", "count": 40 },
+      { "type": "data", "count": 50 },
+      { "type": "video", "count": 20 }
+    ]
+  },
+  {
+    "id": 3,
+    "name": "برج إربد - جامعة اليرموك",
+    "city": "إربد",
+    "operator": "أمنية",
+    "position": [32.5486, 35.8519],
+    "capacity": 180,
+    "currentLoad": 170,
+    "status": "congested",
+    "coverage": 5500,
+    "users": [
+      { "type": "call", "count": 55 },
+      { "type": "data", "count": 80 },
+      { "type": "video", "count": 35 }
+    ]
+  },
+  {
+    "id": 4,
+    "name": "برج العقبة - الميناء",
+    "city": "العقبة",
+    "operator": "زين الأردن",
+    "position": [29.5320, 35.0063],
+    "capacity": 120,
+    "currentLoad": 85,
+    "status": "normal",
+    "coverage": 4500,
+    "users": [
+      { "type": "call", "count": 25 },
+      { "type": "data", "count": 45 },
+      { "type": "video", "count": 15 }
+    ]
+  },
+  {
+    "id": 5,
+    "name": "برج الكرك - القلعة",
+    "city": "الكرك",
+    "operator": "أورانج الأردن",
+    "position": [31.1854, 35.7017],
+    "capacity": 100,
+    "currentLoad": 95,
+    "status": "congested",
+    "coverage": 4000,
+    "users": [
+      { "type": "call", "count": 30 },
+      { "type": "data", "count": 50 },
+      { "type": "video", "count": 15 }
+    ]
+  }
+]
