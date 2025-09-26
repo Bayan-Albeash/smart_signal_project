@@ -1,0 +1,9 @@
+node_modules
+__pycache__
+*.pyc
+.env.local
+.venv
+backend/ml/models/*
+test_*
+google_cloud_test_*
+quick_verify.py
