@@ -1,0 +1,179 @@
+{
+  "metadata": {
+    "source": "TRC Jordan Q1 2025",
+    "generated_at": "2025-01-24T12:00:00Z",
+    "total_records": 1000,
+    "date_range": {
+      "start": "2025-01-01T00:00:00Z",
+      "end": "2025-01-31T23:59:59Z"
+    }
+  },
+  "towers": [
+    {
+      "cell_id": "TRC_AMM_001",
+      "tower_name": "برج عمان - وسط البلد",
+      "city": "عمان",
+      "operator": "زين الأردن",
+      "position": [31.9565, 35.9239],
+      "technology": "5G",
+      "frequency_band": "2600 MHz",
+      "max_capacity": 200,
+      "coverage_radius": 5000
+    },
+    {
+      "cell_id": "TRC_ZRQ_002",
+      "tower_name": "برج الزرقاء - الجديدة",
+      "city": "الزرقاء",
+      "operator": "أورانج الأردن",
+      "position": [32.0833, 36.0933],
+      "technology": "4G",
+      "frequency_band": "1800 MHz",
+      "max_capacity": 150,
+      "coverage_radius": 4000
+    },
+    {
+      "cell_id": "TRC_IRB_003",
+      "tower_name": "برج إربد - جامعة اليرموك",
+      "city": "إربد",
+      "operator": "أمنية",
+      "position": [32.5486, 35.8519],
+      "technology": "5G",
+      "frequency_band": "3500 MHz",
+      "max_capacity": 180,
+      "coverage_radius": 4500
+    },
+    {
+      "cell_id": "TRC_AQB_004",
+      "tower_name": "برج العقبة - الميناء",
+      "city": "العقبة",
+      "operator": "زين الأردن",
+      "position": [29.5320, 35.0063],
+      "technology": "4G",
+      "frequency_band": "2100 MHz",
+      "max_capacity": 120,
+      "coverage_radius": 3500
+    },
+    {
+      "cell_id": "TRC_KRK_005",
+      "tower_name": "برج الكرك - القلعة",
+      "city": "الكرك",
+      "operator": "أورانج الأردن",
+      "position": [31.1854, 35.7017],
+      "technology": "4G",
+      "frequency_band": "900 MHz",
+      "max_capacity": 100,
+      "coverage_radius": 3000
+    }
+  ],
+  "sample_data": [
+    {
+      "cell_id": "TRC_AMM_001",
+      "timestamp": "2025-01-24T08:00:00Z",
+      "load_percentage": 85.2,
+      "active_users": 170,
+      "rsrp": -78.5,
+      "sinr": 18.3,
+      "handover_attempts": 12,
+      "handover_failures": 1,
+      "throughput_mbps": 45.6,
+      "latency_ms": 28.4,
+      "energy_consumption": 85.7
+    },
+    {
+      "cell_id": "TRC_AMM_001",
+      "timestamp": "2025-01-24T09:00:00Z",
+      "load_percentage": 92.1,
+      "active_users": 184,
+      "rsrp": -82.1,
+      "sinr": 15.8,
+      "handover_attempts": 18,
+      "handover_failures": 3,
+      "throughput_mbps": 38.2,
+      "latency_ms": 35.7,
+      "energy_consumption": 92.1
+    },
+    {
+      "cell_id": "TRC_ZRQ_002",
+      "timestamp": "2025-01-24T08:00:00Z",
+      "load_percentage": 73.3,
+      "active_users": 110,
+      "rsrp": -75.2,
+      "sinr": 20.1,
+      "handover_attempts": 8,
+      "handover_failures": 0,
+      "throughput_mbps": 52.3,
+      "latency_ms": 22.1,
+      "energy_consumption": 73.3
+    },
+    {
+      "cell_id": "TRC_IRB_003",
+      "timestamp": "2025-01-24T08:00:00Z",
+      "load_percentage": 94.4,
+      "active_users": 170,
+      "rsrp": -85.7,
+      "sinr": 14.2,
+      "handover_attempts": 15,
+      "handover_failures": 2,
+      "throughput_mbps": 41.8,
+      "latency_ms": 42.3,
+      "energy_consumption": 94.4
+    },
+    {
+      "cell_id": "TRC_AQB_004",
+      "timestamp": "2025-01-24T08:00:00Z",
+      "load_percentage": 70.8,
+      "active_users": 85,
+      "rsrp": -72.4,
+      "sinr": 22.6,
+      "handover_attempts": 5,
+      "handover_failures": 0,
+      "throughput_mbps": 58.7,
+      "latency_ms": 18.9,
+      "energy_consumption": 70.8
+    },
+    {
+      "cell_id": "TRC_KRK_005",
+      "timestamp": "2025-01-24T08:00:00Z",
+      "load_percentage": 95.0,
+      "active_users": 95,
+      "rsrp": -88.3,
+      "sinr": 12.8,
+      "handover_attempts": 20,
+      "handover_failures": 4,
+      "throughput_mbps": 35.2,
+      "latency_ms": 48.7,
+      "energy_consumption": 95.0
+    }
+  ],
+  "network_metrics": {
+    "overall_efficiency": 87.2,
+    "average_latency": 32.4,
+    "total_throughput": 272.6,
+    "handover_success_rate": 94.1,
+    "energy_efficiency": 83.9,
+    "user_satisfaction": 4.3
+  },
+  "recommendations": [
+    {
+      "priority": "high",
+      "tower_id": "TRC_AMM_001",
+      "issue": "حمل عالي في ساعات الذروة",
+      "recommendation": "تطبيق خوارزمية إعادة التوزيع الذكي",
+      "expected_improvement": "15%"
+    },
+    {
+      "priority": "high",
+      "tower_id": "TRC_IRB_003",
+      "issue": "كفاءة منخفضة",
+      "recommendation": "تحسين إعدادات الهوائي",
+      "expected_improvement": "12%"
+    },
+    {
+      "priority": "medium",
+      "tower_id": "TRC_KRK_005",
+      "issue": "معدل فشل عالي في التسليم",
+      "recommendation": "مراجعة حدود الخلية",
+      "expected_improvement": "8%"
+    }
+  ]
+}

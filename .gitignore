@@ -1,3 +1,5 @@
+# SmartSignal AI - Git Ignore File
+
 # Python
 __pycache__/
 *.py[cod]
@@ -41,18 +43,54 @@ ENV/
 *.swo
 *~
 
+=======
+# Virtual environments
+venv/
+env/
+ENV/
+env.bak/
+venv.bak/
+.venv/
+
+>>>>>>> 1fcb6b2f409bed0d5e26988da5cb98278f55ead1
 # Node.js
 node_modules/
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+<<<<<<< HEAD
 
 # React build
+=======
+lerna-debug.log*
+.pnpm-debug.log*
+
+# Build outputs
+>>>>>>> 1fcb6b2f409bed0d5e26988da5cb98278f55ead1
 dist/
 build/
 .next/
 out/
 
+<<<<<<< HEAD
+=======
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+>>>>>>> 1fcb6b2f409bed0d5e26988da5cb98278f55ead1
 # Logs
 logs/
 *.log
@@ -62,10 +100,36 @@ logs/
 *.sqlite
 *.sqlite3
 
+<<<<<<< HEAD
 # Cache
 .cache/
 .parcel-cache/
 .eslintcache
+=======
+# ML Models (keep structure but ignore large files)
+*.pkl
+*.joblib
+*.h5
+*.model
+
+# Google Cloud
+google-cloud-key.json
+service-account.json
+credentials.json
+
+# Keep important JSON files
+!package.json
+!package-lock.json
+!tsconfig.json
+!jsconfig.json
+!components.json
+!vite.config.js
+!tailwind.config.js
+
+# Temporary files
+*.tmp
+*.temp
+>>>>>>> 1fcb6b2f409bed0d5e26988da5cb98278f55ead1
 
 # Coverage reports
 htmlcov/
@@ -76,6 +140,7 @@ coverage.xml
 .hypothesis/
 .pytest_cache/
 
+<<<<<<< HEAD
 # macOS
 .DS_Store
 .DS_Store?
@@ -102,3 +167,94 @@ gcp-credentials.json
 *.joblib
 models/*.h5
 models/*.pb
+=======
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# pyenv
+.python-version
+
+# pipenv
+Pipfile.lock
+
+# PEP 582
+__pypackages__/
+
+# Celery
+celerybeat-schedule
+celerybeat.pid
+
+# SageMath parsed files
+*.sage.py
+
+# Spyder project settings
+.spyderproject
+.spyproject
+
+# Rope project settings
+.ropeproject
+
+# mkdocs documentation
+/site
+
+# mypy
+.mypy_cache/
+.dmypy.json
+dmypy.json
+
+# Pyre type checker
+.pyre/
+
+# Vite
+.vite/
+
+# Tailwind
+.tailwindcss-cache/
+
+# SmartSignal AI Specific
+# Data files (keep structure, ignore sensitive data)
+data/sensitive/
+data/private/
+*.csv
+*.xlsx
+
+# Keep important data files
+!data/jordan_towers.json
+!config.env.example
+
+# ML Models (keep structure but ignore large files)
+ml-models/*.pkl
+ml-models/*.joblib
+ml-models/*.h5
+ml-models/*.model
+ml-models/*.bst
+
+# Keep model structure
+!ml-models/.gitkeep
+
+# Reports and exports
+reports/
+exports/
+downloads/
+*.pdf
+*.docx
+
+# Docker
+.dockerignore
+docker-compose.override.yml
+
+# Testing
+test-results/
+playwright-report/
+test-results.xml
+
+# Backup files
+*.backup
+*.bak
+*~
+
+# Cache directories
+.cache/
+.parcel-cache/
+.eslintcache
+>>>>>>> 1fcb6b2f409bed0d5e26988da5cb98278f55ead1
