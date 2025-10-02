@@ -30,26 +30,6 @@ smart_signal_project_organized/
 └── tests/                  # الاختبارات
 ```
 
-## 🚀 كيفية التشغيل
-
-### المتطلبات الأساسية
-- Python 3.8+
-- Node.js 18+
-- npm أو yarn
-
-### تشغيل الباك إند
-```bash
-cd backend
-pip install -r requirements.txt
-python app.py
-```
-
-### تشغيل الفرونت إند
-```bash
-cd frontend
-npm install
-npm run dev
-```
 
 ## ✨ المميزات
 
@@ -67,9 +47,7 @@ npm run dev
 - **Backend API**: http://localhost:5000
 - **WebSocket**: ws://localhost:8765
 
-## 📞 الدعم
 
-للحصول على المساعدة أو الإبلاغ عن مشاكل، يرجى فتح issue في GitHub.
 
 ---
 تم تطوير هذا المشروع بواسطة فريق SmartSignal AI
